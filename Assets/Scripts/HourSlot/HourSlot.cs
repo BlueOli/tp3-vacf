@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class HourSlot : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class HourSlot : MonoBehaviour
 
     public string day;
     public string hour;
+    public bool isFirstHalf = true;
 
     // Reference to the RectTransform of the hour slot
     private RectTransform rectTransform;
@@ -20,10 +22,24 @@ public class HourSlot : MonoBehaviour
         // Get reference to the RectTransform component
         rectTransform = GetComponent<RectTransform>();
 
+        if (transform.GetSiblingIndex() == 0)
+        {
+            isFirstHalf = true;
+        }
+        else
+        {
+            isFirstHalf = false;
+        }
+
         if (isInAgenda)
         {
             day = transform.parent.parent.gameObject.name;
             hour = transform.parent.gameObject.name;
+
+            if (!isFirstHalf)
+            {
+                hour = hour.Replace(":00", ":30");
+            }
         }
     }
 
@@ -85,4 +101,44 @@ public class HourSlot : MonoBehaviour
         }
     }
 
+    public void UpdateHourSlotValues()
+    {
+        if (transform.GetSiblingIndex() == 0)
+        {
+            isFirstHalf = true;
+        }
+        else
+        {
+            isFirstHalf = false;
+        }
+
+        if (isInAgenda)
+        {
+            day = transform.parent.parent.gameObject.name;
+            hour = transform.parent.gameObject.name;
+
+            if (!isFirstHalf)
+            {
+                hour = hour.Replace(":00", ":30");
+            }
+        }
+    }
+
+    public void HandleActivity()
+    {
+        if(transform.childCount > 0)
+        {
+            Color newColor = holdingTask.transform.GetComponentInChildren<Image>().color;
+            newColor.a = 0.5f;
+            holdingTask.gameObject.GetComponentInChildren<Image>().color = newColor;
+
+            holdingTask.canMerge = false;
+        }
+
+        Color newColor2 = this.GetComponent<Image>().color;
+        newColor2.a = 0.5f;
+        this.GetComponent<Image>().color = newColor2;
+
+        canHold = false;
+    }
 }

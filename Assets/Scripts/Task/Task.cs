@@ -147,7 +147,5 @@ public class Task : MonoBehaviour
     {
         day = dayT;
         time = timeT;
-
-        Debug.Log("Day: " + day + " / Time: " + time);
     }
 }

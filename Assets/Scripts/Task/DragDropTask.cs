@@ -10,6 +10,8 @@ public class DragDropTask : MonoBehaviour, IBeginDragHandler, IDragHandler, IEnd
 
     Transform previousParent;
 
+    private bool comesFromHourSlot = false;
+
     // Reference to the RectTransform of this task
     private RectTransform rectTransform;
 
@@ -36,6 +38,16 @@ public class DragDropTask : MonoBehaviour, IBeginDragHandler, IDragHandler, IEnd
         // Set the task as the dragged object and make it transparent
         canvasGroup.alpha = 0.5f;
         canvasGroup.blocksRaycasts = false;
+
+        if (previousParent.GetComponent<HourSlot>().isInAgenda)
+        {
+            comesFromHourSlot = true;
+            previousParent.GetComponent<HourSlot>().holdingTask = null;
+        }
+        else
+        {
+            comesFromHourSlot = false;
+        }
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -77,7 +89,21 @@ public class DragDropTask : MonoBehaviour, IBeginDragHandler, IDragHandler, IEnd
         {
             if (hourSlot.holdingTask == null)
             {
-                hourSlot.HandleDrop(this.gameObject);
+                if (comesFromHourSlot)
+                {
+                    if (CheckTaskDifficultyVsSlot(this.GetComponent<Task>(), hourSlot))
+                    {
+                        hourSlot.HandleDrop(this.gameObject);
+                    }
+                    else
+                    {
+                        previousParent.GetComponent<HourSlot>().HandleDrop(this.gameObject, true);
+                    }
+                }
+                else
+                {
+                    hourSlot.HandleDrop(this.gameObject);
+                }
             }
             else
             {
@@ -90,14 +116,55 @@ public class DragDropTask : MonoBehaviour, IBeginDragHandler, IDragHandler, IEnd
         }
     }
 
+    private bool CheckTaskDifficultyVsSlot(Task newTask, HourSlot hourSlot)
+    {
+        bool canHoldTask = false;
+
+        hourSlot.UpdateHourSlotValues();
+
+        switch (newTask.difficulty)
+        {
+            case 1:
+                canHoldTask = true;
+                break;
+
+            case 2:
+                canHoldTask = false;
+
+                if (hourSlot.day == newTask.day)
+                {
+                    canHoldTask = true;
+                }
+                break;
+
+            case 3:
+                canHoldTask = false;
+
+                if (hourSlot.hour == newTask.time)
+                {
+                    canHoldTask = true;
+                }
+                break;
+        }
+
+        return canHoldTask;
+    }
+
     public void CheckTask(Task originTask)
     {
         Task newTask = this.GetComponent<Task>();
-        if(newTask)
+        if (newTask != null)
         {
-            if(newTask.CheckIfMergeable(originTask))
+            if(originTask != newTask)
             {
-                originTask.MergeTask(newTask);
+                if (newTask.CheckIfMergeable(originTask))
+                {
+                    originTask.MergeTask(newTask);
+                }
+                else
+                {
+                    previousParent.GetComponent<HourSlot>().HandleDrop(this.gameObject, true);
+                }
             }
             else
             {
