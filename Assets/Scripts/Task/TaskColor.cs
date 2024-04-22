@@ -10,7 +10,6 @@ public class TaskColor : MonoBehaviour
 
     public void AssingColor(int colorPosition, Image targetImage)
     {
-        Debug.Log(possibleColors[colorPosition]);
         targetImage.color = possibleColors[colorPosition];
     }
 }

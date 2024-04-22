@@ -155,17 +155,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   possibleTasks:
-  - meet A
-  - meet B
-  - meet C
-  - meet D
-  - meet E
+  - Sync
+  - Review
+  - Plan
+  - Meet
+  - Ideas
   possibleDifficulties: 010000000200000003000000
   possibleParticipants: 02000000030000000400000005000000
   maxParticipants: 10
   taskType: 
   difficulty: 0
   participantCount: 0
+  taskText: {fileID: 0}
+  day: 
+  time: 
+  canMerge: 1
 --- !u!114 &5891185026356192104
 MonoBehaviour:
   m_ObjectHideFlags: 0

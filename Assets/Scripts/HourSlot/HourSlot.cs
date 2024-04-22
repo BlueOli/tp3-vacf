@@ -94,6 +94,11 @@ public class HourSlot : MonoBehaviour
             taskRectTransform.anchoredPosition = Vector2.zero;
 
             // Optionally, you can perform additional actions here, such as updating the task's state or triggering events.
+
+            if(isInAgenda && !canHold)
+            {
+                Destroy(taskObject);
+            }
         }
         else
         {
@@ -126,17 +131,18 @@ public class HourSlot : MonoBehaviour
 
     public void HandleActivity()
     {
-        if(transform.childCount > 0)
+        if(holdingTask != null)
         {
+            Debug.Log(holdingTask.taskText.text);
             Color newColor = holdingTask.transform.GetComponentInChildren<Image>().color;
-            newColor.a = 0.5f;
+            newColor.a = 0.25f;
             holdingTask.gameObject.GetComponentInChildren<Image>().color = newColor;
-
+            Destroy(holdingTask.GetComponent<DragDropTask>());
             holdingTask.canMerge = false;
         }
 
         Color newColor2 = this.GetComponent<Image>().color;
-        newColor2.a = 0.5f;
+        newColor2.a = 0.25f;
         this.GetComponent<Image>().color = newColor2;
 
         canHold = false;

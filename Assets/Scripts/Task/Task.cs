@@ -16,7 +16,7 @@ public class Task : MonoBehaviour
     public int difficulty;
     public int participantCount;
 
-    private TextMeshProUGUI taskText;
+    public TextMeshProUGUI taskText;
     private TaskColor taskColor;
 
     public string day;
@@ -119,7 +119,25 @@ public class Task : MonoBehaviour
 
     public void UpdateText()
     {
-        taskText.text = taskType + ": " + participantCount + " / " + maxParticipants + " [" + difficulty + "]";
+        string difficultyText;
+
+        switch (difficulty)
+        {
+            case 1:
+                difficultyText = "*";
+                break;
+            case 2:
+                difficultyText = "V";
+                break;
+            case 3:
+                difficultyText = "H";
+                break;
+            default:
+                difficultyText = "*";
+                break;
+        }
+
+        taskText.text = taskType + ": " + participantCount + " / " + maxParticipants + " [" + difficultyText + "]";
     }
 
     public void UpdateColor()
@@ -139,7 +157,6 @@ public class Task : MonoBehaviour
             }
         }
 
-        Debug.Log(index);
         return index;
     }
 

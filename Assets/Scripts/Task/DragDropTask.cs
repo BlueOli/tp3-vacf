@@ -7,7 +7,6 @@ using UnityEngine.UIElements;
 public class DragDropTask : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
     Transform parentOnDrag;
-
     Transform previousParent;
 
     private bool comesFromHourSlot = false;
@@ -87,28 +86,38 @@ public class DragDropTask : MonoBehaviour, IBeginDragHandler, IDragHandler, IEnd
     {
         if (hourSlot.canHold)
         {
-            if (hourSlot.holdingTask == null)
+            if(hourSlot == previousParent.GetComponent<HourSlot>())
             {
-                if (comesFromHourSlot)
+                previousParent.GetComponent<HourSlot>().HandleDrop(this.gameObject);
+            }
+            else
+            {
+                if (hourSlot.holdingTask == null)
                 {
-                    if (CheckTaskDifficultyVsSlot(this.GetComponent<Task>(), hourSlot))
+                    if (comesFromHourSlot)
                     {
-                        hourSlot.HandleDrop(this.gameObject);
+                        if (CheckTaskDifficultyVsSlot(this.GetComponent<Task>(), hourSlot))
+                        {
+                            hourSlot.HandleDrop(this.gameObject);
+                            CheckIfResetNextTaskContainer();
+                        }
+
+                        else
+                        {
+                            previousParent.GetComponent<HourSlot>().HandleDrop(this.gameObject, true);
+                        }
                     }
                     else
                     {
-                        previousParent.GetComponent<HourSlot>().HandleDrop(this.gameObject, true);
+                        hourSlot.HandleDrop(this.gameObject);
+                        CheckIfResetNextTaskContainer();
                     }
                 }
                 else
                 {
-                    hourSlot.HandleDrop(this.gameObject);
+                    CheckTask(hourSlot.holdingTask);
                 }
-            }
-            else
-            {
-                CheckTask(hourSlot.holdingTask);
-            }
+            }            
         }
         else
         {
@@ -160,6 +169,7 @@ public class DragDropTask : MonoBehaviour, IBeginDragHandler, IDragHandler, IEnd
                 if (newTask.CheckIfMergeable(originTask))
                 {
                     originTask.MergeTask(newTask);
+                    CheckIfResetNextTaskContainer();
                 }
                 else
                 {
@@ -171,5 +181,24 @@ public class DragDropTask : MonoBehaviour, IBeginDragHandler, IDragHandler, IEnd
                 previousParent.GetComponent<HourSlot>().HandleDrop(this.gameObject, true);
             }
         }
+    }
+
+    public void CheckIfResetNextTaskContainer()
+    {
+        if (previousParent.GetComponent<NextTaskManager>() != null)
+        {
+            previousParent.GetComponent<TaskTimeGenerator>().StartTaskHoldCoroutine();
+            previousParent.GetComponent<FillImageOverTime>().StartFillCoroutine();
+            previousParent.GetComponent<NextTaskManager>().GenerateNewTask();
+        }
+        else
+        {
+            ReleasePreviousParent();
+        }
+    }
+
+    public void ReleasePreviousParent()
+    {
+        previousParent.GetComponent<HourSlot>().holdingTask = null;
     }
 }
