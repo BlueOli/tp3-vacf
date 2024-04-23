@@ -150,7 +150,8 @@ public class HourSlot : MonoBehaviour
 
     public void HoldTask(Task task)
     {
-        holdingTask = task.GetComponentInChildren<Task>();
+        Debug.Log(task.taskText.text);
+        holdingTask = task;
         holdingTask.SaveDayAndTime(day, hour);
         holdingTask.canMerge = true;
     }

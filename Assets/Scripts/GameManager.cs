@@ -193,6 +193,7 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator StartGame()
     {
+        yield return new WaitForSeconds(1f);
         while (true)
         {
             LoadNextTimeBox();
