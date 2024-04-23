@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 4697398391057263277}
   - component: {fileID: 3050928492976415799}
   - component: {fileID: 7830826302647512326}
+  - component: {fileID: 1785904142360189322}
   m_Layer: 5
   m_Name: FirstHalfBox
   m_TagString: Untagged
@@ -232,6 +233,32 @@ MonoBehaviour:
   day: 
   hour: 
   isFirstHalf: 1
+--- !u!114 &1785904142360189322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 805858113941069179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 4
+  m_Spacing: 0
+  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandHeight: 1
+  m_ChildControlWidth: 1
+  m_ChildControlHeight: 1
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!1 &976962190031145815
 GameObject:
   m_ObjectHideFlags: 0
@@ -366,6 +393,7 @@ GameObject:
   - component: {fileID: 2981452174882097980}
   - component: {fileID: 5293240248180821406}
   - component: {fileID: 3025992749673280578}
+  - component: {fileID: 3373436757700451077}
   m_Layer: 5
   m_Name: FirstHalfBox
   m_TagString: Untagged
@@ -464,6 +492,32 @@ MonoBehaviour:
   day: 
   hour: 
   isFirstHalf: 1
+--- !u!114 &3373436757700451077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1045417096994083820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 4
+  m_Spacing: 0
+  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandHeight: 1
+  m_ChildControlWidth: 1
+  m_ChildControlHeight: 1
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!1 &1072383237888057063
 GameObject:
   m_ObjectHideFlags: 0
@@ -477,6 +531,7 @@ GameObject:
   - component: {fileID: 5622517258261955140}
   - component: {fileID: 5887029671749021995}
   - component: {fileID: 8277322646832842293}
+  - component: {fileID: 8764156822696597451}
   m_Layer: 5
   m_Name: FirstHalfBox
   m_TagString: Untagged
@@ -575,6 +630,32 @@ MonoBehaviour:
   day: 
   hour: 
   isFirstHalf: 1
+--- !u!114 &8764156822696597451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1072383237888057063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 4
+  m_Spacing: 0
+  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandHeight: 1
+  m_ChildControlWidth: 1
+  m_ChildControlHeight: 1
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!1 &1078518320742621244
 GameObject:
   m_ObjectHideFlags: 0
@@ -709,6 +790,7 @@ GameObject:
   - component: {fileID: 1844439817534169264}
   - component: {fileID: 1562479896272254977}
   - component: {fileID: 1927372681229281488}
+  - component: {fileID: 3632183759979179652}
   m_Layer: 5
   m_Name: SeconHalfBox
   m_TagString: Untagged
@@ -807,6 +889,32 @@ MonoBehaviour:
   day: 
   hour: 
   isFirstHalf: 1
+--- !u!114 &3632183759979179652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1616224991756636143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 4
+  m_Spacing: 0
+  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandHeight: 1
+  m_ChildControlWidth: 1
+  m_ChildControlHeight: 1
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!1 &2013495227652146463
 GameObject:
   m_ObjectHideFlags: 0
@@ -820,6 +928,7 @@ GameObject:
   - component: {fileID: 1226144534885233998}
   - component: {fileID: 1772590486909799981}
   - component: {fileID: 1581000405583195838}
+  - component: {fileID: 7180340950419270842}
   m_Layer: 5
   m_Name: FirstHalfBox
   m_TagString: Untagged
@@ -918,6 +1027,32 @@ MonoBehaviour:
   day: 
   hour: 
   isFirstHalf: 1
+--- !u!114 &7180340950419270842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2013495227652146463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 4
+  m_Spacing: 0
+  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandHeight: 1
+  m_ChildControlWidth: 1
+  m_ChildControlHeight: 1
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!1 &2102172922495204686
 GameObject:
   m_ObjectHideFlags: 0
@@ -931,6 +1066,7 @@ GameObject:
   - component: {fileID: 6481612932149705828}
   - component: {fileID: 4224803566813807782}
   - component: {fileID: 1556685477777309172}
+  - component: {fileID: 5285480373938794173}
   m_Layer: 5
   m_Name: SeconHalfBox
   m_TagString: Untagged
@@ -1029,6 +1165,32 @@ MonoBehaviour:
   day: 
   hour: 
   isFirstHalf: 1
+--- !u!114 &5285480373938794173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2102172922495204686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 4
+  m_Spacing: 0
+  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandHeight: 1
+  m_ChildControlWidth: 1
+  m_ChildControlHeight: 1
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!1 &2290659258323483174
 GameObject:
   m_ObjectHideFlags: 0
@@ -1284,6 +1446,7 @@ GameObject:
   - component: {fileID: 6192315074615366807}
   - component: {fileID: 8804297116304370917}
   - component: {fileID: 3084279198697793571}
+  - component: {fileID: 2159829575848967048}
   m_Layer: 5
   m_Name: SeconHalfBox
   m_TagString: Untagged
@@ -1382,6 +1545,32 @@ MonoBehaviour:
   day: 
   hour: 
   isFirstHalf: 1
+--- !u!114 &2159829575848967048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2517706575650596822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 4
+  m_Spacing: 0
+  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandHeight: 1
+  m_ChildControlWidth: 1
+  m_ChildControlHeight: 1
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!1 &3396822274396229309
 GameObject:
   m_ObjectHideFlags: 0
@@ -1395,6 +1584,7 @@ GameObject:
   - component: {fileID: 8749842261224631387}
   - component: {fileID: 5969658361610024631}
   - component: {fileID: 8719730132847039148}
+  - component: {fileID: 6907326492216810043}
   m_Layer: 5
   m_Name: SeconHalfBox
   m_TagString: Untagged
@@ -1493,6 +1683,32 @@ MonoBehaviour:
   day: 
   hour: 
   isFirstHalf: 1
+--- !u!114 &6907326492216810043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3396822274396229309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 4
+  m_Spacing: 0
+  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandHeight: 1
+  m_ChildControlWidth: 1
+  m_ChildControlHeight: 1
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!1 &4000154420210918906
 GameObject:
   m_ObjectHideFlags: 0
@@ -1859,6 +2075,7 @@ GameObject:
   - component: {fileID: 1913730824712445928}
   - component: {fileID: 1131199581320964899}
   - component: {fileID: 6404314285398061515}
+  - component: {fileID: 5161377365250267820}
   m_Layer: 5
   m_Name: FirstHalfBox
   m_TagString: Untagged
@@ -1957,6 +2174,32 @@ MonoBehaviour:
   day: 
   hour: 
   isFirstHalf: 1
+--- !u!114 &5161377365250267820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5698159885253748203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 4
+  m_Spacing: 0
+  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandHeight: 1
+  m_ChildControlWidth: 1
+  m_ChildControlHeight: 1
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!1 &6627235301665728516
 GameObject:
   m_ObjectHideFlags: 0
@@ -1970,6 +2213,7 @@ GameObject:
   - component: {fileID: 2707953973230493961}
   - component: {fileID: 1063119406815494603}
   - component: {fileID: 684120198292179795}
+  - component: {fileID: 4334311663709819628}
   m_Layer: 5
   m_Name: FirstHalfBox
   m_TagString: Untagged
@@ -2068,6 +2312,32 @@ MonoBehaviour:
   day: 
   hour: 
   isFirstHalf: 1
+--- !u!114 &4334311663709819628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6627235301665728516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 4
+  m_Spacing: 0
+  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandHeight: 1
+  m_ChildControlWidth: 1
+  m_ChildControlHeight: 1
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!1 &7276846314139305916
 GameObject:
   m_ObjectHideFlags: 0
@@ -2081,6 +2351,7 @@ GameObject:
   - component: {fileID: 8821738130754209201}
   - component: {fileID: 2724449636021595820}
   - component: {fileID: 4878845440040378446}
+  - component: {fileID: 4332703971888798626}
   m_Layer: 5
   m_Name: SeconHalfBox
   m_TagString: Untagged
@@ -2179,6 +2450,32 @@ MonoBehaviour:
   day: 
   hour: 
   isFirstHalf: 1
+--- !u!114 &4332703971888798626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7276846314139305916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 4
+  m_Spacing: 0
+  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandHeight: 1
+  m_ChildControlWidth: 1
+  m_ChildControlHeight: 1
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!1 &7491723033237858131
 GameObject:
   m_ObjectHideFlags: 0
@@ -2192,6 +2489,7 @@ GameObject:
   - component: {fileID: 1832642758656098640}
   - component: {fileID: 5963086723998004561}
   - component: {fileID: 7045230579071100381}
+  - component: {fileID: 757372657111994865}
   m_Layer: 5
   m_Name: SeconHalfBox
   m_TagString: Untagged
@@ -2290,6 +2588,32 @@ MonoBehaviour:
   day: 
   hour: 
   isFirstHalf: 1
+--- !u!114 &757372657111994865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7491723033237858131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 4
+  m_Spacing: 0
+  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandHeight: 1
+  m_ChildControlWidth: 1
+  m_ChildControlHeight: 1
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!1 &8357048135635625572
 GameObject:
   m_ObjectHideFlags: 0
@@ -2424,6 +2748,7 @@ GameObject:
   - component: {fileID: 1689944042054111156}
   - component: {fileID: 2451291867034086025}
   - component: {fileID: 5938956163620501643}
+  - component: {fileID: 3259350105633591720}
   m_Layer: 5
   m_Name: SeconHalfBox
   m_TagString: Untagged
@@ -2522,6 +2847,32 @@ MonoBehaviour:
   day: 
   hour: 
   isFirstHalf: 1
+--- !u!114 &3259350105633591720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8509602578309368417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 4
+  m_Spacing: 0
+  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandHeight: 1
+  m_ChildControlWidth: 1
+  m_ChildControlHeight: 1
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!1 &8626181428503736874
 GameObject:
   m_ObjectHideFlags: 0
@@ -2535,6 +2886,7 @@ GameObject:
   - component: {fileID: 3206975503159145082}
   - component: {fileID: 7278630927833159517}
   - component: {fileID: 4025057799308323196}
+  - component: {fileID: 3310201375491636194}
   m_Layer: 5
   m_Name: FirstHalfBox
   m_TagString: Untagged
@@ -2633,6 +2985,32 @@ MonoBehaviour:
   day: 
   hour: 
   isFirstHalf: 1
+--- !u!114 &3310201375491636194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8626181428503736874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 4
+  m_Spacing: 0
+  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandHeight: 1
+  m_ChildControlWidth: 1
+  m_ChildControlHeight: 1
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!1 &8886780377161681124
 GameObject:
   m_ObjectHideFlags: 0
@@ -2646,6 +3024,7 @@ GameObject:
   - component: {fileID: 190092964298159748}
   - component: {fileID: 1160245764469927415}
   - component: {fileID: 8553092200234796285}
+  - component: {fileID: 308025277391004458}
   m_Layer: 5
   m_Name: SeconHalfBox
   m_TagString: Untagged
@@ -2744,6 +3123,32 @@ MonoBehaviour:
   day: 
   hour: 
   isFirstHalf: 1
+--- !u!114 &308025277391004458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8886780377161681124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 4
+  m_Spacing: 0
+  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandHeight: 1
+  m_ChildControlWidth: 1
+  m_ChildControlHeight: 1
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!1 &9036153461183174933
 GameObject:
   m_ObjectHideFlags: 0
@@ -2757,6 +3162,7 @@ GameObject:
   - component: {fileID: 5372382242872576300}
   - component: {fileID: 3567879734326377416}
   - component: {fileID: 88714043824968496}
+  - component: {fileID: 1197601406906898991}
   m_Layer: 5
   m_Name: FirstHalfBox
   m_TagString: Untagged
@@ -2855,3 +3261,29 @@ MonoBehaviour:
   day: 
   hour: 
   isFirstHalf: 1
+--- !u!114 &1197601406906898991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9036153461183174933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 4
+  m_Spacing: 0
+  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandHeight: 1
+  m_ChildControlWidth: 1
+  m_ChildControlHeight: 1
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0

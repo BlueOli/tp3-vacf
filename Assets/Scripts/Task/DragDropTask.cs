@@ -30,7 +30,6 @@ public class DragDropTask : MonoBehaviour, IBeginDragHandler, IDragHandler, IEnd
 
         parentOnDrag = GameObject.FindGameObjectWithTag("TaskDragContainer").transform;
 
-        //parentOnDrag = transform.parent;
         transform.SetParent(transform.root);
         transform.SetAsLastSibling();
 
@@ -60,7 +59,6 @@ public class DragDropTask : MonoBehaviour, IBeginDragHandler, IDragHandler, IEnd
         // Restore the task's visibility and raycast blocking
         canvasGroup.alpha = 1f;
         canvasGroup.blocksRaycasts = true;
-        transform.SetParent(parentOnDrag);
 
         Debug.Log(eventData.pointerEnter.gameObject.name);
 
