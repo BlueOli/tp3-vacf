@@ -6,8 +6,8 @@ using UnityEngine.UIElements;
 
 public class DragDropTask : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
-    Transform parentOnDrag;
-    Transform previousParent;
+    public Transform parentOnDrag;
+    public Transform previousParent;
 
     private bool comesFromHourSlot = false;
 

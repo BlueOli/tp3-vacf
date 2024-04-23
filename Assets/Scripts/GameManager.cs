@@ -37,6 +37,8 @@ public class GameManager : MonoBehaviour
     public GameObject endScreen;
     public TextMeshProUGUI endText;
 
+    public float speedFactor = 10f;
+
     public void LoadNewGame()
     {
         tempDayGrid = new GameObject[16];
@@ -62,6 +64,8 @@ public class GameManager : MonoBehaviour
             LoadDayAndTimeBox();
             daySheet.GetComponent<DaySheetRotation>().UpdateText();
             player.UpdateDayText(actualDayIndex + 1);
+
+            Time.timeScale = 1f + actualDayIndex / speedFactor;
         }
 
         if (player.productivity <= 0 || player.stress >= 100)
