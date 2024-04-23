@@ -86,7 +86,7 @@ public class GameManager : MonoBehaviour
             }
             if(player.stress >= 100)
             {
-                endText.text = "You had a mental breakdown because you couldn't handle your workload";
+                endText.text = "You had a mental breakdown because you couldn't handle industry standards";
             }
         }
     }

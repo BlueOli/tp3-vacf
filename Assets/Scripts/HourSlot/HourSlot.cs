@@ -62,7 +62,9 @@ public class HourSlot : MonoBehaviour
         // Set the task object's anchored position to center it within the hour slot
         taskRectTransform.anchoredPosition = Vector2.zero;
 
-        // Optionally, you can perform additional actions here, such as updating the task's state or triggering events.        
+        // Optionally, you can perform additional actions here, such as updating the task's state or triggering events.
+        // 
+        Debug.Log("Tucked: " + taskObject + " in " + this.name);
 
         if (holdingTask == null)
         {

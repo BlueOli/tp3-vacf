@@ -30,7 +30,7 @@ public class DragDropTask : MonoBehaviour, IBeginDragHandler, IDragHandler, IEnd
 
         parentOnDrag = GameObject.FindGameObjectWithTag("TaskDragContainer").transform;
 
-        parentOnDrag = transform.parent;
+        //parentOnDrag = transform.parent;
         transform.SetParent(transform.root);
         transform.SetAsLastSibling();
 
