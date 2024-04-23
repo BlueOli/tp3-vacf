@@ -29,6 +29,10 @@ public class GameManager : MonoBehaviour
     private Coroutine startGameCoroutine;
 
     public int initialDifficulty = 3;
+    public int playerStressGain = 1;
+    public int playerStressLoss = 1;
+    public int playerProductivityLoss = 1;
+    public int difficultyMultiplier = 3;
 
     public GameObject endScreen;
     public TextMeshProUGUI endText;
@@ -137,13 +141,13 @@ public class GameManager : MonoBehaviour
 
         if (task != null)
         {
-            player.stress++;
+            player.stress+=playerStressGain;
             player.productivity += (float)task.participantCount;
         }
         else
         {
-            player.stress--;
-            player.productivity -= 2f;
+            player.stress-=playerStressLoss;
+            player.productivity -=playerProductivityLoss;
         }
 
         player.UpdatePlayerStats();
@@ -208,7 +212,7 @@ public class GameManager : MonoBehaviour
         GameObject weekDay = Instantiate(weekDayPrefab, agendaBox.transform);
         weekDay.name = name;
 
-        int difficulty = initialDifficulty + actualDayIndex / 2;
+        int difficulty = initialDifficulty + actualDayIndex / difficultyMultiplier;
         if (difficulty > dayGrid.Length) difficulty = dayGrid.Length - 1;
 
         FillDayWithRandomTasks(weekDay, difficulty);

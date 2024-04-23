@@ -675,6 +675,10 @@ MonoBehaviour:
   actualTimeIndex: 0
   dayHasChanged: 0
   initialDifficulty: 3
+  playerStressGain: 2
+  playerStressLoss: 1
+  playerProductivityLoss: 2
+  difficultyMultiplier: 2
   endScreen: {fileID: 1407267834}
   endText: {fileID: 868976076}
 --- !u!1 &579285096

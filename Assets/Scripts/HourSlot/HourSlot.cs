@@ -64,11 +64,9 @@ public class HourSlot : MonoBehaviour
 
         // Optionally, you can perform additional actions here, such as updating the task's state or triggering events.        
 
-        if(holdingTask == null)
+        if (holdingTask == null)
         {
-            holdingTask = taskObject.GetComponentInChildren<Task>();
-            holdingTask.SaveDayAndTime(day, hour);
-            holdingTask.canMerge = true;
+            HoldTask(taskObject.GetComponent<Task>());
         }
     }
 
@@ -95,7 +93,7 @@ public class HourSlot : MonoBehaviour
 
             // Optionally, you can perform additional actions here, such as updating the task's state or triggering events.
 
-            if(isInAgenda && !canHold)
+            if (isInAgenda && !canHold)
             {
                 Destroy(taskObject);
             }
@@ -131,8 +129,10 @@ public class HourSlot : MonoBehaviour
 
     public void HandleActivity()
     {
-        if(holdingTask != null)
+        if (holdingTask != null || this.transform.GetComponentInChildren<Task>())
         {
+            HoldTask(this.transform.GetComponentInChildren<Task>());
+
             Debug.Log(holdingTask.taskText.text);
             Color newColor = holdingTask.transform.GetComponentInChildren<Image>().color;
             newColor.a = 0.25f;
@@ -146,5 +146,12 @@ public class HourSlot : MonoBehaviour
         this.GetComponent<Image>().color = newColor2;
 
         canHold = false;
+    }
+
+    public void HoldTask(Task task)
+    {
+        holdingTask = task.GetComponentInChildren<Task>();
+        holdingTask.SaveDayAndTime(day, hour);
+        holdingTask.canMerge = true;
     }
 }
